@@ -1,0 +1,30 @@
+# Analyse des Transactions Bancaires et Factures
+
+## Description
+
+Ce projet permet d'analyser des transactions bancaires à partir de relevés CSV et de faire correspondre ces transactions avec des factures extraites à partir d'images en utilisant la reconnaissance optique de caractères (OCR). L'outil génère un rapport détaillé des correspondances entre les transactions et les factures.
+
+## Fonctionnalités
+
+- Chargement des relevés bancaires (format CSV).
+- Extraction des factures depuis des images (JPG, PNG) via OCR.
+- Matching des transactions avec les factures à l'aide de la correspondance floue.
+- Génération d'un rapport détaillé sur les transactions et les factures associées.
+
+## Prérequis
+
+Avant de commencer, assurez-vous d'avoir installé les dépendances suivantes :
+
+- **Python 3.x**
+- **Tesseract OCR** (nécessite une installation locale sur votre machine, téléchargeable ici : [Tesseract OCR](https://github.com/tesseract-ocr/tesseract))
+- **Bibliothèques Python** :
+  - `pandas`
+  - `pytesseract`
+  - `PIL` (Pillow)
+  - `fuzzywuzzy`
+  - `streamlit` (si vous souhaitez utiliser l'interface web)
+
+Vous pouvez installer les dépendances Python avec la commande suivante :
+
+```bash
+pip install pandas pytesseract pillow fuzzywuzzy streamlit
